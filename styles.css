@@ -193,7 +193,7 @@
 /* Hero Section */
 .hero {
   background-image: url(https://cdn.discordapp.com/attachments/978258193710985246/1089194987436134460/image.png); /* Ganti biar ga pake url */
-  
+  opacity: 1;
   padding: 200px 0;
 }
 
@@ -219,12 +219,12 @@
   background: #ee0979; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #ff6a00,
+    #964B00,
     #ee0979
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #ff6a00,
+    #964B00,
     #ee0979
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
@@ -234,18 +234,37 @@
   -mo-text-fill-color: transparent;
 }
 
-.hero__description {
-  font-size: 60px;
-  background: #da22ff; /* fallback for old browsers */
+.hero__heading div{
+  background: #ee0979; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #9114ff,
-    #da22ff
+    #000000,
+    #808080
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #8f0eff,
-    #da22ff
+    #000000,
+    #808080
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -mo-text-fill-color: transparent;
+}
+
+.hero__description {
+  font-size: 80px;
+  background: #e75480; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #00008B,
+    #e75480
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #00008B,
+    #e75480
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
@@ -270,7 +289,7 @@
 
 /* About Section */
 .main {
-  background-color: #131313; /* GANTI */
+  background-color: #a6cada; /* GANTI */
   padding: 10rem 0;
 }
 

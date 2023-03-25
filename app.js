@@ -54,3 +54,16 @@ const hideMobileMenu = () => {
 
 menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
+
+function introSound(){
+  let coinflip = Math.floor(Math.random() * 2);
+  var audioPath;
+  switch(coinflip){
+    case 0: audioPath = 'src/rvdia-low-pitch.wav'; break;
+    case 1: audioPath = 'src/rvdia-high-pitch.wav'; break;
+  }
+  let wavFile = new Audio(audioPath);
+  wavFile.volume = 0.3;
+  wavFile.play();
+}
+introSound()
