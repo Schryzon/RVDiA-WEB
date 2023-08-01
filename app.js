@@ -63,7 +63,7 @@ function introSound(){
     case 1: audioPath = 'src/rvdia-high-pitch.wav'; break;
   }
   let wavFile = new Audio(audioPath);
-  wavFile.volume = 0.3;
+  wavFile.volume = 0.5;
   wavFile.play();
 }
 introSound()
