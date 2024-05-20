@@ -55,15 +55,29 @@ const hideMobileMenu = () => {
 menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
 
-function introSound(){
-  let coinflip = Math.floor(Math.random() * 2);
+function introSound(pitch) {
   var audioPath;
-  switch(coinflip){
-    case 0: audioPath = 'src/rvdia-low-pitch.wav'; break;
-    case 1: audioPath = 'src/rvdia-high-pitch.wav'; break;
+  switch(pitch) {
+    case 'low': audioPath = 'src/rvdia-low-pitch.wav';
+                var wavFile = new Audio(audioPath);
+                wavFile.volume = 0.09; break;
+
+    case 'high': audioPath = 'src/rvdia-high-pitch.wav';
+                var wavFile = new Audio(audioPath);
+                wavFile.volume = 0.07; break;
   }
-  let wavFile = new Audio(audioPath);
-  wavFile.volume = 0.5;
   wavFile.play();
+  
+  wavFile.addEventListener('error', function(e) {
+    console.error('Error loading audio file:', e);
+  }, false);
 }
-introSound()
+
+// Add event listener to the buttons with their respective classes
+document.querySelector('.discord__btn').addEventListener('click', function() {
+  introSound('low');
+});
+
+document.querySelector('.wa__btn').addEventListener('click', function() {
+  introSound('high');
+});

@@ -1,82 +1,153 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>RVDiA's Terms of Service</title>
-    </head>
-
-    <body>
-        <h2>Terms of Service for RVDiA Discord Bot</h2>
-        <p>Last updated: 01/08/2023</p>
-
-        <p>Welcome to RVDiA (Revolutionary Virtual Discord Assistant)! Thank you for using my free-to-use and open-source Discord bot. Before using RVDiA, please carefully read and agree to the following Terms of Service (TOS).</p>
-        <p>By using RVDiA, you acknowledge that you have read, understood, and agreed to be bound by these terms. If you do not agree to these terms, please refrain from using the bot.</p>
-
-        <h3>Usage and Ownership:</h3>
-        <p>RVDiA is an open-source Discord bot, and its source code is available publicly on <a href="https://www.github.com/Schryzon/rvdia" target="_blank">GitHub</a>. You are free to use, modify, and distribute the bot according to the terms of the open-source MIT license.</p>
-
-        <h3>Prohibited Activities:</h3>
-        <p>You agree not to use RVDiA for any unlawful, abusive, harassing, threatening, or harmful purposes. Prohibited activities include, but are not limited to:</p>
-        <ul>
-            <li>Violating Discord's Terms of Service or Community Guidelines.</li>
-            <li>Impersonating other users, individuals, or entities.</li>
-            <li>Spamming, advertising, or promoting illegal or inappropriate content.</li>
-            <li>Attempting to compromise the security or stability of the bot or its hosting environment.</li>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RVDiA</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="src/haruna.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo"><img src="src/haruna.png" style="width:45px;height:45px;">RVDiA</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__links" id="services-page"
+              >Commands</a
+            >
+          </li>
+          <li class="navbar__btn">
+            <a href="#sign-up" class="button" id="signup">Invite to Server!</a>
+          </li>
         </ul>
+      </div>
+    </nav>
 
-        <h3>Support and Maintenance:</h3>
-        <p>RVDiA is provided on an "as-is" basis without any warranties or guarantees of support or maintenance. The developers may update or modify the bot at their discretion, but they are not obligated to do so. They are not liable for any loss of data or functionality resulting from updates or maintenance.</p>
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading"><span>Revolusioner,</span> <div>Independen,</div> <span>Virtual.</span></h1>
+        <p class="hero__description">Discord Bot</p>
+        <button class="discord__btn"><a href="https://discord.com/oauth2/authorize?client_id=957471338577166417&permissions=1376805776501&scope=bot%20applications.commands" target="_blank"></a>Versi Discord</button>
+        <button class="wa__btn"><a href="https://wa.link/gwf7n9" target="_blank"></a>Versi WhatsApp</button>
+      </div>
+    </div>
 
-        <h3>Liability:</h3>
-        <p>The developers of RVDiA shall not be liable for any direct, indirect, incidental, special, consequential, or exemplary damages arising from the use or inability to use the bot, including but not limited to damages for loss of profits, goodwill, data, or other intangible losses.</p>
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card"><i class="fas fa-layer-group"></i></div>
+        </div>
+        <div class="main__content">
+          <h1>Apa itu RVDiA?</h1>
+          <h2>Discord Bot multi fungsi berbahasa Indonesia</h2>
+          <p>RVDiA diciptakan untuk memenuhi kebutuhan berbagai server</p>
+          <button class="main__btn"><a href="#">Schedule Call</a></button>
+        </div>
+      </div>
+    </div>
 
-        <h3>Indemnification:</h3>
-        <p>By using RVDiA, you agree to indemnify and hold harmless the developers from any claims, damages, losses, liabilities, costs, and expenses arising from your use or misuse of the bot, violation of the TOS, or infringement of any third-party rights.</p>
+    <!-- Commands Section -->
+    <div class="services" id="services">
+      <h1>Kumpulan Command</h1>
+      <div class="services__wrapper">
+        <div class="services__card">
+          <h2>Fun</h2>
+          <p>Untuk kamu yang suka bersenang-senang!</p>
+          <div class="services__btn"><button>Daftar Command</button></div>
+        </div>
+        <div class="services__card">
+          <h2>General</h2>
+          <p>Untuk berbagai command umum bermanfaat!</p>
+          <div class="services__btn"><button>Daftar Command</button></div>
+        </div>
+        <div class="services__card">
+          <h2>G-Tech</h2>
+          <p>Khusus untuk anggota G-Tech Re'sman</p>
+          <div class="services__btn"><button>Daftar Command</button></div>
+        </div>
+        <div class="services__card">
+          <h2>Moderation</h2>
+          <p>Untuk menjaga keamanan servermu!</p>
+          <div class="services__btn"><button>Daftar Command</button></div>
+        </div>
+      </div>
+    </div>
 
-        <h3>Privacy:</h3>
-        <p>RVDiA does not collect or store any personal information. However, it is your responsibility to review and comply with Discord's Privacy Policy when using the bot in conjunction with Discord.</p>
+    <!-- Features Section -->
+    <div class="main" id="sign-up">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Invite RVDiA Sekarang Juga!</h1>
+          <h2>Biarkan DiA yang melayanimu!</h2>
+          <p>Selamat mencoba!</p>
+          <button class="main__btn"><a href="https://discord.com/api/oauth2/authorize?client_id=957471338577166417&permissions=1514446056567&scope=applications.commands%20bot">Invite RVDIA</a></button>
+          <button class="main__btn"><a href="https://discord.gg/QqWCnk6zxw">Support Server</a></button>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-2">
+            <i class="fas fa-users"></i>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <h3>Changes to the Terms of Service:</h3>
-        <p>The developer may update these Terms of Service from time to time without prior notice. Any changes will be effective immediately upon posting the revised TOS. It is your responsibility to review the TOS periodically, and continued use of RVDiA after any changes constitutes acceptance of the updated terms.</p>
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Contact</h2>
+            <a href="https://discord.gg/QqWCnk6zxw">Discord</a>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Social</h2>
+            <a href="https://www.youtube.com/@xelvelt">YouTube</a> <a href="https://github.com/Schryzon">Github</a>
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">RVDIA</a>
+          </div>
+          <p class="website__rights">Made by Schryzon (Jayananda).</p>
+          <div class="social__icons">
+            <a href="https://www.youtube.com/@xelvelt" class="social__icon--link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="https://discord.gg/QqWCnk6zxw" class="social__icon--link"
+              ><i class="fab fa-discord"></i
+            ></a>
+            <a href="https://github.com/Schryzon" class="social__icon--link"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
 
-        <h3>Termination:</h3>
-        <p>The developer reserves the right to terminate or suspend your access to RVDiA at any time for any reason, including but not limited to violation of these Terms of Service.</p>
-
-        <h3>Governing Law:</h3>
-        <p>These Terms of Service shall be governed by and construed in accordance with the laws of Indonesia, without regard to its conflict of law principles.</p>
-
-        <h3>Contact:</h3>
-        <p>If you have any questions or concerns regarding these Terms of Service or the RVDiA Discord bot, you can reach out to the developers at <a href="mailto:myuuko92@gmail.com">myuuko92@gmail.com</a>.</p>
-
-        <p>By using RVDiA, you acknowledge that you have read, understood, and agreed to these Terms of Service. Thank you for using RVDiA, and I hope you enjoy the bot!</p>
-
-        <hr>
-        <h2>Privacy Policy for RVDiA Discord Bot</h2>
-        <p>Last updated: 01/08/2023</p>
-
-        <p>Welcome to the privacy policy for RVDiA, a free-to-use and open-source Discord bot. This policy outlines how RVDiA collects, uses, and protects user information. By using RVDiA, you agree to the practices described in this policy. If you do not agree with this policy, please refrain from using the bot.</p>
-
-        <h3>1. Information Collection and Use:</h3>
-        <p>RVDiA does not collect any personal information from users. The bot does not have access to any data related to user identities, messages, or interactions on Discord servers. RVDiA is designed to perform specific functions within Discord servers and does not track or store any user-related data.</p>
-
-        <h3>2. Server Data:</h3>
-        <p>RVDiA may process and store data related to server configurations, settings, and other non-personal information necessary for its proper functioning. However, this data is not used to identify individual users or collect personal information.</p>
-
-        <h3>3. Data Sharing:</h3>
-        <p>As RVDiA does not collect personal information, there is no data sharing with third parties. Any server data processed by RVDiA is solely for the purpose of providing the intended functionality within the Discord servers where the bot is invited.</p>
-
-        <h3>4. Security:</h3>
-        <p>The developers of RVDiA take data security seriously and implement reasonable measures to protect the bot and any server data it processes. However, it is important to note that no method of data transmission or storage over the internet is 100% secure. Users should be aware of potential risks when using any online service, including RVDiA.</p>
-
-        <h3>5. Children's Privacy:</h3>
-        <p>RVDiA is not intended for use by individuals under the age of 13. The bot does not knowingly collect any personal information from children. If you are a parent or guardian and believe that your child has used RVDiA and provided personal information, please contact us immediately at <a href="mailto:myuuko92@gmail.com">myuuko92@gmail.com</a>, and we will take appropriate steps to remove any such information from our records.</p>
-
-        <h3>6. Modifications to the Privacy Policy:</h3>
-        <p>The developer of RVDiA may update this privacy policy from time to time. Any changes to the policy will be posted on Discord. It is your responsibility to review this policy periodically to stay informed of any updates.</p>
-
-        <h3>7. Contact Information:</h3>
-        <p>If you have any questions or concerns regarding this privacy policy or the privacy practices of RVDiA, you can contact the developer at <a href="mailto:myuuko92@gmail.com">myuuko92@gmail.com</a>.</p>
-
-        <p>By using RVDiA, you acknowledge that you have read, understood, and agreed to this privacy policy. Thank you for using RVDiA, and we hope you find it helpful for your Discord servers!</p>
-    </body>
+    <script src="app.js"></script>
+  </body>
 </html>

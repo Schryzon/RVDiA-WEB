@@ -192,7 +192,7 @@
 
 /* Hero Section */
 .hero {
-  background-image: url(https://cdn.discordapp.com/attachments/978258193710985246/1089194987436134460/image.png); /* Ganti biar ga pake url */
+  background-image: url("src/haruna_background.png"); /* Ganti biar ga pake url */
   opacity: 1;
   padding: 200px 0;
 }
@@ -348,6 +348,90 @@
   margin-top: 1rem;
   font-size: 2rem;
   font-weight: 700;
+}
+
+.discord__btn {
+  font-size: 1.8rem;
+  background: #7289da; /* Discord blurple */
+  background: -webkit-linear-gradient(to right, #7289da, #5865f2); /* Discord blurple to blue */
+  background: linear-gradient(to right, #7289da, #5865f2); /* Discord blurple to blue */
+  padding: 20px 60px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+}
+
+.discord__btn a {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+
+.discord__btn:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #7289da;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.discord__btn:hover {
+  color: #000000;
+}
+
+.discord__btn:hover:after {
+  width: 100%;
+}
+
+.wa__btn {
+  font-size: 1.8rem;
+  background: #a8e063; /* light green */
+  background: -webkit-linear-gradient(to right, #a8e063, #56ab2f); /* light green to dark green */
+  background: linear-gradient(to right, #a8e063, #56ab2f); /* light green to dark green */
+  padding: 20px 60px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+}
+
+.wa__btn a {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+
+.wa__btn:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #a8e063;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.wa__btn:hover {
+  color: #000000;
+}
+
+.wa__btn:hover:after {
+  width: 100%;
 }
 
 .main__btn {
